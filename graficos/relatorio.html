@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Análise de Tabelas Hash</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #666; border-bottom: 2px solid #333; padding-bottom: 5px; }
+        .grafico { margin: 20px 0; text-align: center; background: white; padding: 20px; border-radius: 8px; }
+        img { max-width: 100%; height: auto; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .info { background: #e3f2fd; padding: 15px; border-radius: 5px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>📊 Análise de Desempenho - Tabelas Hash</h1>
+    
+    <div class="info">
+        <h3>Configurações do Experimento</h3>
+        <ul>
+            <li><strong>Funções Hash:</strong> Divisão, Multiplicação, Hash Duplo (Rehashing)</li>
+            <li><strong>Tamanhos de Tabela:</strong> 1.000, 10.000, 100.000</li>
+            <li><strong>Tamanhos de Conjunto:</strong> 100.000, 1.000.000, 10.000.000</li>
+            <li><strong>Seed:</strong> 42 (fixa para reprodutibilidade)</li>
+        </ul>
+    </div>
+    
+    <h2>1. Tempo de Inserção</h2>
+    <div class="grafico">
+        <img src="1_tempo_insercao.png" alt="Tempo de Inserção">
+    </div>
+    
+    <h2>2. Número de Colisões</h2>
+    <div class="grafico">
+        <img src="2_colisoes.png" alt="Colisões">
+    </div>
+    
+    <h2>3. Tempo de Busca</h2>
+    <div class="grafico">
+        <img src="3_tempo_busca.png" alt="Tempo de Busca">
+    </div>
+    
+    <h2>4. Performance Total (Inserção + Busca)</h2>
+    <div class="grafico">
+        <img src="4_performance_total.png" alt="Performance Total">
+    </div>
+    
+    <h2>5. Gap Médio</h2>
+    <div class="grafico">
+        <img src="5_gap_medio.png" alt="Gap Médio">
+    </div>
+    
+    <h2>6. Maiores Listas Encadeadas</h2>
+    <div class="grafico">
+        <img src="6_maiores_listas.png" alt="Maiores Listas">
+    </div>
+    
+    <h2>7. Heatmap de Colisões</h2>
+    <div class="grafico">
+        <img src="7_heatmap_colisoes.png" alt="Heatmap">
+    </div>
+    
+    <h2>8. Fator de Carga vs Colisões</h2>
+    <div class="grafico">
+        <img src="8_fator_carga_vs_colisoes.png" alt="Fator de Carga">
+    </div>
+    
+</body>
+</html>

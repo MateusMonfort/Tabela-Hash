@@ -1,0 +1,52 @@
+# ============================================
+# MANTER NO GIT (não ignorar):
+# - graficos/
+# - src/
+# - src_sem_comentarios/
+# - README.md
+# ============================================
+
+# Arquivos compilados
+*.class
+*.jar
+*.war
+*.ear
+bin/
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Dados gerados
+*.txt
+*.csv
+resultados.csv
+resultados_rapido.csv
+dados_100k.txt
+
+# Pasta de scripts auxiliares (Python)
+scripts/
+
+# Logs
+*.log
+
+# Temporários
+*.tmp
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
