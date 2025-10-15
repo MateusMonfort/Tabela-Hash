@@ -1,11 +1,3 @@
-# ============================================
-# MANTER NO GIT (não ignorar):
-# - graficos/
-# - src/
-# - src_sem_comentarios/
-# - README.md
-# ============================================
-
 # Arquivos compilados
 *.class
 *.jar
@@ -28,10 +20,6 @@ Thumbs.db
 # Dados gerados
 *.txt
 *.csv
-resultados.csv
-resultados_rapido.csv
-dados_100k.txt
-
 # Pasta de scripts auxiliares (Python)
 scripts/
 
